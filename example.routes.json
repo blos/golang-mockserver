@@ -1,0 +1,67 @@
+[
+    {
+        "path": "/v1",
+        "method": "POST",
+        "status_code": 200,
+        "body": {}
+    },
+    {
+        "path": "/v2",
+        "method": "GET",
+        "status_code": 200,
+        "body": {
+            "test": 1
+        }
+    },
+    {
+        "path": "/v3",
+        "method": "GET",
+        "status_code": 200,
+        "body": {
+            "test": 1
+        },
+        "header": {
+            "X-KEY": "VAL"
+        }
+    },
+    {
+        "path": "/v4",
+        "method": "GET",
+        "status_code": 500,
+        "body": {
+            "test": 1
+        },
+        "header": {
+            "X-KEY1": "VAL1",
+            "X-KEY2": "VAL2"
+        }
+    },
+    {
+        "path": "/v5",
+        "method": "GET"
+    },
+    {
+        "path": "/v6",
+        "status_code": 200,
+        "method": "GET",
+        "response_offset_mode": "constant",
+        "response_offset": 2000
+    },
+    {
+        "path": "/v7",
+        "status_code": 200,
+        "method": "GET",
+        "response_offset_mode": "constant",
+        "response_offset": 1500
+    },
+    {
+        "path": "/v8",
+        "status_code": 200,
+        "method": "GET",
+        "response_offset_mode": "normal",
+        "response_offset": {
+            "mean": 1000,
+            "std": 2000
+        }
+    }
+]
